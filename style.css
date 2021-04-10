@@ -1,7 +1,8 @@
-body{
+*{
     box-sizing: border-box;
     margin: 0px;
     margin-top: 10px;
+    font-family: 'Poppins';
 }
 
 #container{
@@ -20,7 +21,7 @@ body{
     width: 150px;
     height: 45px;
     background: white;
-    border: solid black 1px;
+    border: solid gray 1px;
     border-radius: 7px;
     font-family: 'Poppins';
     font-size: 1.2rem;
@@ -30,4 +31,20 @@ body{
 #btn:hover{
     background: gray;
     color: white;
+}
+
+#output{
+    box-sizing: border-box;
+    width: 300px;
+    height: 100px;
+    background: red;
+    margin-top: 50px;
+    padding: 5px;
+    /* display: none; */
+}
+
+p{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
 }
