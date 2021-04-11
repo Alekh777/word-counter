@@ -20,7 +20,8 @@ function calc(Str) {
       i--;
     }
   }
-
+  if(str[0] == ' ')
+    words--;
   document.getElementById('chars').innerText = 'Total Characters: ' + characters;
   document.getElementById('words').innerText = 'Total Words: ' + words;
 
