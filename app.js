@@ -2,7 +2,6 @@ function calc(Str) {
   let str = Str.value;
   let characters = 0;
   let words = 0;
-  //Don't include space in the beginning of the string
   for (i = 0; i < str.length; i++) {
     while (str[i] != " " && i < str.length) {
       characters++;

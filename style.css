@@ -6,13 +6,14 @@
 }
 
 #container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
     margin-top: 90px;
 }
 
 #str{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
     width: 600px;
     height: 200px;
     margin-top: 30px;
@@ -24,14 +25,13 @@
     #str{
         width: 340px;
     }
-    #btn{
-        position: absolute;
-        bottom: 50px;
-    }
 }
 
 #btn{
-    margin: 20px 10px 10px 10px;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 250px;
     width: 150px;
     height: 45px;
     background: white;
@@ -48,13 +48,15 @@
 }
 
 #output{
-    box-sizing: border-box;
+    position: absolute;
+    transform: translateX(50%);
+    top: 300px;
+    right: 50%;
     width: 300px;
     height: 100px;
     background: white;
     margin-top: 50px;
     padding: 5px;
-    /* display: none; */
 }
 
 p{
