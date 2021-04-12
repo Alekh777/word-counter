@@ -3,13 +3,15 @@ function calc(Str) {
   let characters = 0;
   let words = 0;
   for (i = 0; i < str.length; i++) {
-    while (str[i] != " " && i < str.length) {
+    if(str[i] == '\n')
+      continue;
+    while (str[i] != " " && i < str.length && str[i] != '\n') {
       characters++;
       i++;
     }
     words++;
 
-    if (str[i] == " ") {
+    if (str[i] == " " && str[i] != '\n') {
       characters++;
       i++;
       while (str[i] == " " && i < str.length) {
