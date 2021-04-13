@@ -3,12 +3,21 @@
     margin: 0px;
     margin-top: 10px;
     font-family: 'Poppins';
+    background: var(--main-color);
+    color: rgb(189, 189, 189);
+}
+
+:root{
+    --main-color: #333333;
+    --sub-color: #575757;
+    --text-area-color: rgb(204, 204, 204);
+    --button-click-color: rgb(165, 165, 165);
 }
 
 h1{
     text-align: center;
     font-size: 50px;
-    color: rgb(119, 119, 119);
+    color: var(--sub-color);
 }
 
 #container{
@@ -25,6 +34,12 @@ h1{
     margin-top: 30px;
     border-radius: 8px;
     padding: 5px;
+    color: var(--text-area-color);
+}
+
+#str:focus{
+    outline: none;
+    box-shadow: 0 0 0 1pt var(--text-area-color);
 }
 
 @media (max-width:640px){
@@ -43,7 +58,7 @@ h1{
     top: 250px;
     width: 150px;
     height: 45px;
-    background: white;
+    background: var(--main-color);
     border: solid gray 1px;
     border-radius: 7px;
     font-family: 'Poppins';
@@ -51,9 +66,15 @@ h1{
     transition: background-color 0.2s, color 0.2s;
 }
 
+#btn:focus{
+    outline: none;
+    box-shadow: 0 0 0 1pt var(--button-click-color);
+}
+
 #btn:hover{
-    background: gray;
-    color: white;
+    cursor: pointer;
+    background: var(--button-click-color);
+    color: black;
 }
 
 #output{
@@ -63,7 +84,7 @@ h1{
     right: 50%;
     width: 300px;
     height: 100px;
-    background: white;
+    background: var(--main-color);
     margin-top: 50px;
     padding: 5px;
 }
