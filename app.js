@@ -28,11 +28,17 @@ function calc(Str) {
 }
 
 function changeTheme(){
+  console.log('clicked');
   let circle = document.querySelector('#circle');
   let val = getComputedStyle(circle).getPropertyValue('left');
   if(val == '0px'){
     circle.style.setProperty('left', "22px");
+    circle.style.background = "white";
+    document.documentElement.style.setProperty('--main-color', 'white');
+    document.documentElement.style.setProperty('--sub-color', 'rgb(99, 99, 99)');
+    document.documentElement.style.setProperty('--text-area-color', 'black');
+    document.documentElement.style.setProperty('--btn_hover', 'white');
+    document.documentElement.style.setProperty('--text-color', 'black');
+    document.documentElement.style.setProperty('--button-click-color', 'rgb(99,99,99)');
   }
-  else if(val == '22px')
-  circle.style.setProperty('left', '0px');
 }

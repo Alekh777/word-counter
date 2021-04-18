@@ -1,9 +1,9 @@
 *{
     box-sizing: border-box;
     margin: 0px;
-    font-family: 'Poppins';
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
     background: var(--main-color);
-    color: rgb(189, 189, 189);
+    transition: background-color 0.3s;
 }
 
 html, body{
@@ -16,6 +16,8 @@ html, body{
     --sub-color: #afafaf;
     --text-area-color: rgb(204, 204, 204);
     --button-click-color: rgb(165, 165, 165);
+    --btn_hover: black;
+    --text-color: rgb(189, 189, 189);
 }
 
 h1{
@@ -24,6 +26,8 @@ h1{
     font-size: 50px;
     padding-top: 30px;
     color: var(--sub-color);
+    background: var(--main-color);
+    transition: color 0.3s, background-color 0.3s;
 }
 
 #str{
@@ -34,6 +38,8 @@ h1{
     border-radius: 8px;
     padding: 5px;
     color: var(--text-area-color);
+    background: var(--main-color);
+    transition: color 0.3s, back, background-color 0.3s;
 }
 
 #str:focus{
@@ -52,6 +58,7 @@ h1{
 
 #btn{
     display: block;
+    color: var(--text-color);
     margin: 0px auto;
     margin-top: 150px;
     height: 45px;
@@ -59,9 +66,8 @@ h1{
     background: var(--main-color);
     border: solid gray 1px;
     border-radius: 7px;
-    font-family: 'Poppins';
     font-size: 1.2rem;
-    transition: background-color 0.2s, color 0.2s;
+    transition: background-color 0.3s, color 0.2s;
 }
 
 @media (min-height: 400px){
@@ -100,11 +106,12 @@ h1{
 #btn:hover{
     cursor: pointer;
     background: var(--button-click-color);
-    color: black;
+    color: var(--btn_hover);
 }
 
 #output{
     display: block;
+    color: var(--text-color);
     margin: 0px auto;
     margin-top: 50px;
     height: 100px;
@@ -112,6 +119,7 @@ h1{
     background: var(--main-color);
     margin-top: 50px;
     padding: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 p{
@@ -138,7 +146,8 @@ p{
     position: absolute;
     top: -3px;
     left: 0px;
-    transition: left 0.3s;
+    transition: left 0.3s, background-color 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 9px 1px;
 }
 
 @media (max-width: 540px){
