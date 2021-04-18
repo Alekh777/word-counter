@@ -130,6 +130,17 @@ p{
     border-radius: 10px;
 }
 
+#circle{
+    width: 28px;
+    height: 28px;
+    background: rgb(24, 24, 24);
+    border-radius: 14px;
+    position: absolute;
+    top: -3px;
+    left: 0px;
+    transition: left 0.3s;
+}
+
 @media (max-width: 540px){
     #slider{
         top:100px;
