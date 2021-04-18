@@ -41,4 +41,15 @@ function changeTheme(){
     document.documentElement.style.setProperty('--text-color', 'black');
     document.documentElement.style.setProperty('--button-click-color', 'rgb(99,99,99)');
   }
+
+  else if(val == '22px'){
+    circle.style.setProperty('left', '0px');
+    circle.style.background = "black";
+    document.documentElement.style.setProperty('--main-color', '#333333');
+    document.documentElement.style.setProperty('--sub-color', '#afafaf');
+    document.documentElement.style.setProperty('--text-area-color', 'rgb(204, 204, 204)');
+    document.documentElement.style.setProperty('--btn_hover', 'black');
+    document.documentElement.style.setProperty('--text-color', 'rgb(189, 189, 189)');
+    document.documentElement.style.setProperty('--button-click-color', 'rgb(165, 165, 165)');
+  }
 }
