@@ -119,3 +119,21 @@ p{
     width: 100%;
     text-align: center;
 }
+
+#slider{
+    width: 50px;
+    height: 22px;
+    background: rgba(105, 105, 105, 0.8);
+    position: absolute;
+    top: 56px;
+    right: 50px;
+    border-radius: 10px;
+}
+
+@media (max-width: 540px){
+    #slider{
+        top:100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
