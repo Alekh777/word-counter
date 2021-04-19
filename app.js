@@ -44,7 +44,7 @@ function changeTheme(){
 
   else if(val == '22px'){
     circle.style.setProperty('left', '0px');
-    circle.style.background = "black";
+    circle.style.background = "rgb(136, 136, 136)";
     document.documentElement.style.setProperty('--main-color', '#333333');
     document.documentElement.style.setProperty('--sub-color', '#afafaf');
     document.documentElement.style.setProperty('--text-area-color', 'rgb(204, 204, 204)');

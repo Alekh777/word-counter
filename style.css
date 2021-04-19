@@ -135,13 +135,13 @@ p{
     position: absolute;
     top: 56px;
     right: 50px;
-    border-radius: 10px;
+    border-radius: 11px;
 }
 
 #circle{
     width: 28px;
     height: 28px;
-    background: rgb(24, 24, 24);
+    background: rgb(136, 136, 136);
     border-radius: 14px;
     position: absolute;
     top: -3px;
@@ -162,4 +162,18 @@ p{
     #slider{
         display: none;
     }
+}
+
+.theme_icon{
+    background: none;
+    display: block;
+}
+
+#moon{
+    margin: 3px auto;
+}
+
+#sun{
+    display: none;
+    margin: 2px auto;
 }
