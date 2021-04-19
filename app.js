@@ -40,6 +40,8 @@ function changeTheme(){
     document.documentElement.style.setProperty('--btn_hover', 'white');
     document.documentElement.style.setProperty('--text-color', 'black');
     document.documentElement.style.setProperty('--button-click-color', 'rgb(99,99,99)');
+    document.querySelector('#moon').style.setProperty('display', 'none');
+    document.querySelector('#sun').style.setProperty('display', 'block');
   }
 
   else if(val == '22px'){
@@ -51,5 +53,7 @@ function changeTheme(){
     document.documentElement.style.setProperty('--btn_hover', 'black');
     document.documentElement.style.setProperty('--text-color', 'rgb(189, 189, 189)');
     document.documentElement.style.setProperty('--button-click-color', 'rgb(165, 165, 165)');
+    document.querySelector('#moon').style.setProperty('display', 'block');
+    document.querySelector('#sun').style.setProperty('display', 'none');
   }
 }

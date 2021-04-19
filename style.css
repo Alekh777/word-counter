@@ -170,6 +170,7 @@ p{
 }
 
 #moon{
+    display: block;
     margin: 3px auto;
 }
 
